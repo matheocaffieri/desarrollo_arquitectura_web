@@ -1,0 +1,135 @@
+/* ====== ESTILOS GENERALES ====== */
+body {
+    padding-top: 56px; /* Compensación para la navbar fixed-top */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* ====== COLORES PERSONALIZADOS ====== */
+.bg-purple {
+    background-color: #6f42c1;
+}
+
+.text-purple {
+    color: #6f42c1;
+}
+
+.btn-purple {
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+}
+
+.btn-purple:hover {
+    background-color: #5a32a3;
+}
+
+/* ====== SECCIÓN DE INICIO ====== */
+#inicio {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/background2.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#inicio img {
+    border: 4px solid #6f42c1;
+}
+
+#contacto {
+    background-image: url('../img/background3.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ====== TARJETAS DE HABILIDADES Y PROYECTOS ====== */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.progress {
+    height: 1.25rem;
+    border-radius: 10px;
+}
+
+/* ====== PIE DE PÁGINA ====== */
+footer a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #adb5bd;
+}
+
+/* ====== SCROLL SUAVE ====== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ====== MODO OSCURO OPCIONAL (puede activarse con una clase en body) ====== */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .bg-light {
+    background-color: #1e1e1e !important;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode footer {
+    background-color: #000;
+    color: #e0e0e0;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #bb86fc;
+    border: none;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    #inicio {
+        min-height: auto;
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    #inicio .col-md-4,
+    #inicio .col-md-8 {
+        text-align: center;
+    }
+}
+
+#galeria .carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}
