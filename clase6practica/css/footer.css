@@ -1,0 +1,8 @@
+
+/* Estilo del pie de página */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
