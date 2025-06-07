@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer parcial Caffieri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>TITULO DEL BOLETIN</h1>
+    <p class="subhead">Texto del subtítulo</p>
+  </header>
+  <main>
+    <section class="intro">
+      <img src="./new-york.jpg" alt="Imagen principal">
+    </section>
+
+    <section class="columnas">
+      <div class="columna-1">
+        <h2>Sección 1</h2>
+        <p>Texto de la sección 1 <u>AQUI</u></p>
+        <p>Este sería el texto que iría en esta descripción, pero no tengo mucho tiempo para agregar <strong>un parrafo entero</strong>.</p>
+      </div>
+      <div class="columna-2">
+        <h2>Sección 2</h2>
+        <p>Texto de la sección 2 <u>AQUI</u></p>
+        <p>Este sería el texto que iría en esta descripción, pero no tengo mucho tiempo para agregar <strong>un parrafo entero</strong>.</p>
+      </div>
+      <div class="columna-3">
+        <h2>Sección 3</h2>
+        <p>Texto de la sección 3, debería incluir una lista para que quede mas completo así que le dejo alguna con países <u>AQUI</u></p>
+        <ul>
+          <li>España</li>
+          <li>Francia</li>
+          <li>Alemania</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="articulo-inferior">
+      <div class="parte-izquierda">
+        <img src="./toronto.jpeg" alt="Imagen secundaria">
+      </div>
+      <div class="parte-derecha">
+        <h2>UN NUEVO TEXTO, NO SE DE QUE</h2>
+        <p><em>Este es un mini texto</em></p>
+        <table>
+          <thead>
+            <tr>
+              <th>Artículo</th>
+              <th>Página</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Introducción</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Noticias del día</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Entrevista</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Opinión</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>¿Querés más? <a href="https://google.com">Visitá nuestro sitio</a></p>
+      </div>
+    </section>
+
+    <section class="form-container">
+      <h2 id="form-title">HOLA</h2>
+      <form id="subscription-form">
+        <div class="form-columns">
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" />
+            <small class="error" id="error-nombre"></small>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <small class="error" id="error-email"></small>
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" />
+            <small class="error" id="error-password"></small>
+          </div>
+          <div class="form-group">
+            <label for="repeat-password">Repetir contraseña</label>
+            <input type="password" id="repeat-password" name="repeat-password" />
+            <small class="error" id="error-repeat-password"></small>
+          </div>
+          <div class="form-group">
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" />
+            <small class="error" id="error-edad"></small>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono" />
+            <small class="error" id="error-telefono"></small>
+          </div>
+          <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" />
+            <small class="error" id="error-direccion"></small>
+          </div>
+          <div class="form-group">
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad" name="ciudad" />
+            <small class="error" id="error-ciudad"></small>
+          </div>
+          <div class="form-group">
+            <label for="codigo-postal">Código Postal</label>
+            <input type="text" id="codigo-postal" name="codigo-postal" />
+            <small class="error" id="error-codigo-postal"></small>
+          </div>
+          <div class="form-group">
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" name="dni" />
+            <small class="error" id="error-dni"></small>
+          </div>
+        </div>
+        <div class="button-container">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p class="copyright">Matheo Caffieri - 2025</p>
+    <p class="contacto">Contacto: <a href="mailto:MatheoNicolas.Caffieri@alumnos.uai.edu.ar">MatheoNicolas.Caffieri@alumnos.uai.edu.ar</a></p>
+  </footer>
+
+  <script src="validaciones.js"></script>
+</body>
+</html>
